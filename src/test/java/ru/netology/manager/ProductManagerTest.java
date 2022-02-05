@@ -13,6 +13,7 @@ class ProductManagerTest {
 
     private ProductRepository repository = new ProductRepository();
     private ProductManager manager = new ProductManager(repository);
+    private Product product= new Product(1, "тест",1);
     private Product book1 = new Book(157, "Оно", 728, "Стивен Кинг");
     private Product book2 = new Book(168, "Куджо", 624, "Стивен Кинг");
     private Product book3 = new Book(178, "Мизери", 785, "Стивен Кинг");
@@ -28,6 +29,7 @@ class ProductManagerTest {
         manager.add(smartphone1);
         manager.add(smartphone2);
         manager.add(smartphone3);
+        manager.add(product);
     }
 
     @Test
